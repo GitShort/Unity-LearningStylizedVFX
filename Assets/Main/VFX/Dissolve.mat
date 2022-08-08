@@ -37,7 +37,7 @@ Material:
     m_Floats:
     - _Cutoff_Height: 0
     - _Edge_Width: 0.34
-    - _Noise_Strength: -1.43
+    - _Noise_Strength: 0.35
     - _QueueControl: 0
     - _QueueOffset: 5
     - _Scale: 5
