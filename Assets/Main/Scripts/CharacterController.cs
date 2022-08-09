@@ -11,6 +11,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField] VisualEffect swordSlashVFX;
     [SerializeField] VisualEffect swordHitVFX;
 
+    [SerializeField] VisualEffect bowChargeVFX;
+
     bool isCastingAbility = false;
 
     // Start is called before the first frame update
@@ -64,5 +66,11 @@ public class CharacterController : MonoBehaviour
     {
         if (swordHitVFX != null)
             swordHitVFX.Play();
+    }
+
+    public void BowChargeEffect()
+    {
+        if (bowChargeVFX != null)
+            bowChargeVFX.Play();
     }
 }
