@@ -15,7 +15,7 @@ Material:
   m_LightmapFlags: 2
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: 3005
+  m_CustomRenderQueue: 2005
   stringTagMap: {}
   disabledShaderPasses: []
   m_SavedProperties:
@@ -35,7 +35,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Cutoff_Height: -6.5
+    - _Cutoff_Height: 11.53
     - _Edge_Width: 2.66
     - _Noise_Strength: 16.7
     - _QueueControl: 0

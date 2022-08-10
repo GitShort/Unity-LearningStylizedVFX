@@ -15,6 +15,10 @@ public class CharacterController : MonoBehaviour
 
     bool isCastingAbility = false;
 
+    [SerializeField] GameObject arrow;
+    [SerializeField] GameObject arrowShootPos;
+    [SerializeField] float arrowSpeed = 10f;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -72,5 +76,13 @@ public class CharacterController : MonoBehaviour
     {
         if (bowChargeVFX != null)
             bowChargeVFX.Play();
+    }
+
+
+    public void ShootArrow()
+    {
+        GameObject go;
+        go = Instantiate(arrow, arrowShootPos.transform.position, transform.rotation);
+        go.GetComponent<Rigidbody>().AddForce(transform.forward * arrowSpeed, ForceMode.Impulse);
     }
 }
