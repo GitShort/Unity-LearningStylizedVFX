@@ -18,6 +18,8 @@ public class CharacterController : MonoBehaviour
     [SerializeField] GameObject arrow;
     [SerializeField] GameObject arrowShootPos;
     [SerializeField] float arrowSpeed = 10f;
+
+    [SerializeField] VisualEffect shieldChargeVFX;
     
     // Start is called before the first frame update
     void Start()
@@ -49,6 +51,9 @@ public class CharacterController : MonoBehaviour
             if (effect[effectNum] != null)
                 effect[effectNum].Play();
 
+            if (trigger.Equals("wCast") && shieldChargeVFX != null)
+                shieldChargeVFX.Play();
+
             isCastingAbility = true;
             StartCoroutine(AbilityCooldown());
         }
@@ -77,7 +82,6 @@ public class CharacterController : MonoBehaviour
         if (bowChargeVFX != null)
             bowChargeVFX.Play();
     }
-
 
     public void ShootArrow()
     {
