@@ -483,8 +483,8 @@ VisualEffect:
   m_GameObject: {fileID: 381644217}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 392f414437c50714e8a588c4b4c00e81, type: 3}
-  m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
+  m_InitialEventName: 
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_ResourceVersion: 1
@@ -653,16 +653,48 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 23527081, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: effect.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 23527081, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
       propertyPath: effect.Array.data[4]
       value: 
       objectReference: {fileID: 1763857325}
+    - target: {fileID: 969495618, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_InitialEventNameOverriden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 974127693, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_InitialEventName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 974127693, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_InitialEventNameOverriden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1224135485, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_InitialEventNameOverriden
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763857324, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763857325, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_InitialEventName
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763857325, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
+      propertyPath: m_InitialEventNameOverriden
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1763857326, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.56
       objectReference: {fileID: 0}
     - target: {fileID: 1763857326, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.16
+      value: 2.76
       objectReference: {fileID: 0}
     - target: {fileID: 1763857326, guid: d1d7f6d670a38f84d82180544cf7d7f0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -797,8 +829,8 @@ VisualEffect:
   m_GameObject: {fileID: 753789558}
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 29c39a6e9050b6d40ab4e7b3060a8cbf, type: 3}
-  m_InitialEventName: OnPlay
-  m_InitialEventNameOverriden: 0
+  m_InitialEventName: 
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_ResourceVersion: 1
@@ -1014,6 +1046,19 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 338918809, guid: cb24da90216cb8f43916f361eb3e4cef, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 738112321, guid: cb24da90216cb8f43916f361eb3e4cef, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 408718604563912617, guid: cb24da90216cb8f43916f361eb3e4cef,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5808681972257605388, guid: cb24da90216cb8f43916f361eb3e4cef,
         type: 3}
       propertyPath: m_RootOrder
@@ -1073,6 +1118,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Arrow
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808681972257605391, guid: cb24da90216cb8f43916f361eb3e4cef,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb24da90216cb8f43916f361eb3e4cef, type: 3}
@@ -1150,7 +1200,7 @@ VisualEffect:
   m_Enabled: 1
   m_Asset: {fileID: 8926484042661614526, guid: 00477f4ef6880b342b262a1de574c7d6, type: 3}
   m_InitialEventName: 
-  m_InitialEventNameOverriden: 0
+  m_InitialEventNameOverriden: 1
   m_StartSeed: 0
   m_ResetSeedOnPlay: 1
   m_ResourceVersion: 1
