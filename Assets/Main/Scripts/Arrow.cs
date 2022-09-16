@@ -13,6 +13,8 @@ public class Arrow : MonoBehaviour
 
     Animator anim;
 
+    [SerializeField] bool dropDummy = false;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -23,6 +25,11 @@ public class Arrow : MonoBehaviour
     {
         if(!isWallHit)
         {
+            if (dropDummy)
+            {
+                collision.gameObject.GetComponent<DummyCollision>().DropDummy();
+                this.gameObject.transform.SetParent(collision.gameObject.transform);
+            }
             isWallHit = true;
             rb.constraints = RigidbodyConstraints.FreezeAll;
             if (hitWallVFX != null)

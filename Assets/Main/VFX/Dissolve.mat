@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Dissolve
-  m_Shader: {fileID: -6465566751694194690, guid: b1548a8d40ec2874ea043379fa20e4be,
+  m_Shader: {fileID: -6465566751694194690, guid: db4b17cb644273545ad2b8d5f0575028,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []

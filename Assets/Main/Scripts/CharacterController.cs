@@ -20,6 +20,9 @@ public class CharacterController : MonoBehaviour
     [SerializeField] float arrowSpeed = 10f;
 
     [SerializeField] VisualEffect shieldChargeVFX;
+
+    [SerializeField] VisualEffect[] mageChargeVFX;
+    [SerializeField] VisualEffect mageFireVFX;
     
     // Start is called before the first frame update
     void Start()
@@ -88,5 +91,22 @@ public class CharacterController : MonoBehaviour
         GameObject go;
         go = Instantiate(arrow, arrowShootPos.transform.position, transform.rotation);
         go.GetComponent<Rigidbody>().AddForce(transform.forward * arrowSpeed, ForceMode.Impulse);
+    }
+
+    public void MageChargeEffect()
+    {
+        foreach (VisualEffect visual in mageChargeVFX)
+        {
+            if(visual != null)
+                visual.Play();
+        }
+    }
+
+    public void MageFireEffect()
+    {
+        if(mageFireVFX != null)
+        {
+            mageFireVFX.Play();
+        }
     }
 }

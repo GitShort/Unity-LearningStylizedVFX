@@ -705,6 +705,7 @@ MonoBehaviour:
   arrowVFX: {fileID: 1179471954916447740}
   arrowDissolve: {fileID: 338918810}
   hitWallVFX: {fileID: 738112322}
+  dropDummy: 1
 --- !u!95 &508302401
 Animator:
   serializedVersion: 4
