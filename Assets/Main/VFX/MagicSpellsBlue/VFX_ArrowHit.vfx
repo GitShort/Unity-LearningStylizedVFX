@@ -89,7 +89,7 @@ MonoBehaviour:
     enumValues: []
     descendantCount: 0
   m_ImportDependencies: []
-  m_GraphVersion: 8
+  m_GraphVersion: 9
   m_ResourceVersion: 1
   m_SubgraphDependencies: []
   m_CategoryPath: 
@@ -7646,8 +7646,8 @@ MonoBehaviour:
   - {fileID: 8926484042661615530}
   - {fileID: 8926484042661615531}
   - {fileID: 8926484042661615534}
-  - {fileID: 8926484042661615535}
   - {fileID: 8926484042661615536}
+  - {fileID: 8926484042661615535}
   - {fileID: 8926484042661615537}
   m_OutputSlots: []
   m_Label: ImpactRing
